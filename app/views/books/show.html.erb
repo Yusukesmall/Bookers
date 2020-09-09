@@ -1,6 +1,7 @@
-<h3>Title:<span><%= @book.title %></span></h3>
-<h3>Body:<span><%= @book.body %></span></h3>
 
-<a href="">Edit</a>
+<h3>Title : <span><%= @book.title %></span></h3>
+<h3>Body : <span><%= @book.body %></span></h3>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
 <span>|</span>
 <a href="http://localhost:3000/books">Back</a>
